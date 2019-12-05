@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css">
+    <title>Password Generator</title>
+</head>
+
+<body>
+
+    <div>
+        <h1>Password</h1>
+        <h4>You can start typing a password or generate one.</h4>
+        <input class="password" name="password" type="text" />
+
+        <ul class="checklist">
+            <li class="length">Must be at least 8 characters long.</li>
+            <li class="lowercase">Must contain a lowercase letter.</li>
+            <li class="uppercase">Must contain an uppercase letter.</li>
+            <li class="number">Must contain a number.</li>
+            <li class="special">Must contain a special character.</li>
+        </ul>
+        <button class="generate">Generate Password</button>
+        <button class="copy">Copy to Clipboard</button>
+        <button class="clear">Clear</button>
+    </div>
+</body>
+<script src="javascript.js"></script>
+
+</html>

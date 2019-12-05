@@ -77,14 +77,15 @@ password.addEventListener('keyup', function () {
 });
 
 generatePass.addEventListener("click", function () {
-    var chars = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z]{8,}$/;
-    // var temp = "";
-    // var length = Math.random() * (15 - 8) + 8;
-    // for (var x = 0; x < length; x++) {
-    //     var i = Math.floor(Math.random() * chars.length);
-    //     temp += chars.charAt(i);
-    // }
-    password.value = chars;
+    var chars = "abcdefghijklmnopqrstuvwxyz!@#$%^&*()-+<>ABCDEFGHIJKLMNOP1234567890";
+    var temp = "";
+    var length = Math.random() * (15 - 8) + 8;
+    for (var x = 0; x < length; x++) {
+        var i = Math.floor(Math.random() * chars.length);
+        temp += chars.charAt(i);
+    }
+
+    password.value = temp;
     pattern.charLength();
     pattern.lowercase();
     pattern.uppercase();

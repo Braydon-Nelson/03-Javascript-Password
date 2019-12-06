@@ -8,7 +8,7 @@ This is a homework project to make a Passord Validator/Generator.
 
 ## Photos
 
-### Page look
+### Page View
 ![Image of the password Generator and Validator](assets/imgs/page-view.jpg)
 This is a simple generator/validator for your password needs.
 

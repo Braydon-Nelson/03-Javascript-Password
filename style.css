@@ -40,7 +40,34 @@ input {
 ul {
     display: block;
     margin-top: 6px;
-    font-size: 12px;
+    font-size: 15px;
     line-height: 22px;
     color: #ff0000;
+}
+
+span {
+    display: none;
+}
+
+button {
+    color: #0099CC;
+    background: transparent;
+    border: 2px solid #0099CC;
+    border-radius: 6px;
+    font-size: large;
+}
+
+@media all and (max-width:480px) {
+    ul {
+        font-size: 20px;
+    }
+    input {
+        width: 300px;
+    }
+    div {
+        width: 100%;
+    }
+    button {
+        font-size: medium;
+    }
 }
